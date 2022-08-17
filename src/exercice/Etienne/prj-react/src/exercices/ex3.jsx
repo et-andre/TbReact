@@ -8,9 +8,12 @@ const Ex3 = (props) =>
     const btnUpClick = () =>
     {
         setCpt(before => {
-            let bt = document.getElementById("btdown")
-            bt.removeAttribute("hidden");
-            bt.setAttribute   ("enabled", "");
+            if (!before)
+            {
+                let bt = document.getElementById("btdown")
+                bt.removeAttribute("hidden");
+                bt.setAttribute   ("enabled", "");
+            }
             return ++before;
         })
     }

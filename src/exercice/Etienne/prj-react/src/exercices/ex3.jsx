@@ -1,5 +1,4 @@
 import {useState} from "react";
-import PropTypes from 'prop-types';
 
 const Ex3 = (props) =>
 {
@@ -11,7 +10,7 @@ const Ex3 = (props) =>
             if (!before)
             {
                 let bt = document.getElementById("btdown")
-                bt.removeAttribute("hidden");
+                bt.removeAttribute("hidden"     );
                 bt.setAttribute   ("enabled", "");
             }
             return ++before;
@@ -24,8 +23,8 @@ const Ex3 = (props) =>
             if (!--before)
             {
                 let bt = document.getElementById("btdown")
-                bt.removeAttribute("enabled");
-                bt.setAttribute   ("hidden", "");
+                bt.removeAttribute("enabled"    );
+                bt.setAttribute   ("hidden" , "");
             }
             return before;
         })

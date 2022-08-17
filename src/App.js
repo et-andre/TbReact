@@ -10,6 +10,10 @@ import SimpleEvents from "./demo/demo-04-dom-event/EventExample";
 import BtnDemo from "./demo/demo-05-states/components/btn-demo/btn-demo";
 import MultiNumberClass from "./demo/demo-05-states/components/multi-number/multi-number-class";
 import MultiNumber from "./demo/demo-05-states/components/multi-number/multi-number";
+import Counter from "./exercice/exercice-03/counter";
+import BasicForm from "./demo/demo-06-forms/components/basic-form/basic-form";
+import ComplexForm from "./demo/demo-06-forms/components/complex-form/complex-form";
+import ComplexFormV2 from "./demo/demo-06-forms/components/complex-form/complex-form-v2";
 
 function App() {
   return (
@@ -33,10 +37,18 @@ function App() {
         {/*<SimpleEvents />*/}
 
         {/* demo 5 states */}
-        <BtnDemo />
-        <BtnDemo />
-        <MultiNumberClass />
-        <MultiNumber />
+        {/*<BtnDemo />*/}
+        {/*<BtnDemo />*/}
+        {/*<MultiNumberClass />*/}
+        {/*<MultiNumber />*/}
+
+        {/*exercice 03 counter*/}
+        {/*<Counter incr={1} />*/}
+
+         {/* demo 6 forms */}
+        {/*<BasicForm />*/}
+        {/*<ComplexForm />*/}
+        <ComplexFormV2 />
     </div>
   );
 }

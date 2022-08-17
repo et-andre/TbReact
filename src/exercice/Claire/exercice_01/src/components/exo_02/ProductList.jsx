@@ -7,7 +7,7 @@ function ProductList({products}) {
     return (
         <>
             <h2>List of products</h2>
-            <table>
+            <table className="table">
                 <ProductTableHead/>
                 <tbody>
                     {productsJsx}
@@ -31,7 +31,7 @@ function ProductTableHead () {
 
 function ProductTableRow ({ name, price, promo }) {
     return (
-        <tr className={promo ? 'promo' : ''}>
+        <tr className={promo ? 'table-success' : ''}>
             <td>{name}</td>
             <td>{price}</td>
             <td>{promo ? "En promo" : ""}</td>

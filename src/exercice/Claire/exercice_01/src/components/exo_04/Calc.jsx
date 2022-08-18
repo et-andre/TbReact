@@ -30,6 +30,8 @@ function Calc() {
             case 'x':
                 res = data.input1 * data.input2
                 break;
+            default:
+                res = data.input1 * data.input2
         }
         setResult(res)
     }

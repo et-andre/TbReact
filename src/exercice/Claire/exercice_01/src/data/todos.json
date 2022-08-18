@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Laundry",
+        "description": "Do the laundry",
+        "priority": 1,
+        "done": false
+    },
+    {
+        "id": 2,
+        "name": "Shop",
+        "description": "Make groceries",
+        "priority": 2,
+        "done": false
+    },
+    {
+        "id": 3,
+        "name": "Questions",
+        "description": "Don't hesitate to ask questions",
+        "priority": 3,
+        "done": false
+    },
+    {
+        "id": 4,
+        "name": "Exercice 05",
+        "description": "Do the exercise 05",
+        "priority": 1,
+        "done": true
+    }
+]

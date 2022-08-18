@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 
-const Calculator = ({incrementValue}) => {
+const Calculator = () => {
     const [firstNumber, setFirstNumber] = useState('');
     const [secondNumber, setSecondNumber] = useState('');
     const [operator, setOperator] = useState('');

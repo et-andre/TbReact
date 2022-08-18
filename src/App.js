@@ -18,6 +18,7 @@ import Calculator from "./exercice/exercice-04/components/calculator/calculator"
 import ChildEvents from "./demo/demo-07-child-events/components/child-events";
 import {useState} from "react";
 import TodoApp from "./exercice/exercice-05/containers/todo-app/todo-app";
+import ClickCounter from "./demo/demo-08-life-cycle/components/life-cycle";
 
 function App() {
   return (
@@ -59,7 +60,10 @@ function App() {
 
         {/*<ChildEvents />*/}
 
-        <TodoApp />
+        {/*exercice 07 todo list*/}
+        {/*<TodoApp />*/}
+
+        <ClickCounter />
     </div>
   );
 }

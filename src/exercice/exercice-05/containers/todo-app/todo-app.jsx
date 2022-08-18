@@ -14,11 +14,24 @@ const TodoApp = () =>
 
     const deleteTask = (id) =>
     {
+        // let newTasks = [];
+        // for(let i = 0; i < tasks.length; i++)
+        // {
+        //     if(i !== id)
+        //     {
+        //         newTasks.push(tasks[i]);
+        //     }
+        // }
         setTasks(tasks.filter((tasks, index) => index !== id));
     }
 
     const taskDone = (id) =>
     {
+        // let newTasks = [];
+        // for(let i = 0; i < tasks.length; i++)
+        // {
+        //     newTasks.push(i === id ? { ...tasks[i], isDone: true } : tasks[i]);
+        // }
         setTasks(tasks.map((task, index) => index === id ? { ...task, isDone: true } : task ));
     }
 

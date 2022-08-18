@@ -2,6 +2,7 @@ import {useState} from "react";
 
 const ExampleEvents = ({ onResponse, onTriggeredEvent, onMachin, onClick }) =>
 {
+    console.log("UPDATE EVENT");
     const handleClick1 = () =>
     {
         onResponse(42);
@@ -30,6 +31,7 @@ const ExampleEvents = ({ onResponse, onTriggeredEvent, onMachin, onClick }) =>
 
 const SecondChild = ({ number }) =>
 {
+    console.log('UPDADATE SECOND CHILD');
     return (
         <>
             <h1>{ number === 42 ? "42 est la réponse universelle!!!" : "vous n'avez pas de chance" }</h1>

@@ -19,6 +19,10 @@ import ChildEvents from "./demo/demo-07-child-events/components/child-events";
 import {useState} from "react";
 import TodoApp from "./exercice/exercice-05/containers/todo-app/todo-app";
 import ClickCounter from "./demo/demo-08-life-cycle/components/life-cycle";
+import ToggleDisplay from "./exercice/exercice-06/containers/toggle-display/toggle-display";
+import DisplayClock from "./exercice/exercice-06/components/display-clock/display-clock";
+import DisplayDate from "./exercice/exercice-06/components/display-date/display-date";
+import Agify from "./demo/demo-09-ajax/containers/agify/agify";
 
 function App() {
   return (
@@ -63,7 +67,12 @@ function App() {
         {/*exercice 07 todo list*/}
         {/*<TodoApp />*/}
 
-        <ClickCounter />
+        {/*demo event*/}
+        {/*<ClickCounter />*/}
+
+        {/*<ToggleDisplay ComponentA={DisplayClock} ComponentB={DisplayDate} />*/}
+
+        <Agify />
     </div>
   );
 }

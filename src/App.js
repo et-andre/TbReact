@@ -23,6 +23,9 @@ import ToggleDisplay from "./exercice/exercice-06/containers/toggle-display/togg
 import DisplayClock from "./exercice/exercice-06/components/display-clock/display-clock";
 import DisplayDate from "./exercice/exercice-06/components/display-date/display-date";
 import Agify from "./demo/demo-09-ajax/containers/agify/agify";
+import LoadingDisplay from "./exercice/exercice-07/components/loading-display/loading-display";
+import ErrorDisplay from "./exercice/exercice-07/components/error-display/error-display";
+import WeatherApp from "./exercice/exercice-07/containers/weather-app/weather-app";
 
 function App() {
   return (
@@ -72,7 +75,8 @@ function App() {
 
         {/*<ToggleDisplay ComponentA={DisplayClock} ComponentB={DisplayDate} />*/}
 
-        <Agify />
+        {/*<Agify />*/}
+        <WeatherApp />
     </div>
   );
 }

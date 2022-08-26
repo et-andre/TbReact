@@ -14,9 +14,14 @@ const Ex4 = (props) =>
 
     const ValChanged = (ec) =>
     {
-        const { name, value, type } = ec.target;
+        const { name, value } = ec.target;
         const newVals = { ...data, [name]: value };
         setData(newVals);
+    }
+
+    const btnReset = (er) =>
+    {
+        setData("", "+", "", "", "");
     }
 
     const formSubmit = (es) =>
@@ -72,6 +77,7 @@ const Ex4 = (props) =>
             <button type="submit">Calculer</button>
             <input id="res"  name="res"  type="number" value={data.res } disabled></input>
             {(data.err !== "") && <input id="err"  name="err"  type="textarea" value={data.err} disabled></input>}
+            <button type="button" onClick={btnReset}>Effacer</button>
         </form>
     </>);
 }

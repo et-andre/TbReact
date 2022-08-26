@@ -1,0 +1,7 @@
+.done {
+    background-color: lightgreen;
+}
+
+.pending {
+    background-color: lightcoral;
+}

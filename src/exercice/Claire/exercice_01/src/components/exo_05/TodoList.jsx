@@ -16,7 +16,7 @@ function TodoList(props) {
 
     function removeTask(todo) {
         setTodos( (v) => {
-            for(let index of v) {
+            for(let index in v) {
                 if(v[index].id === todo.id) {
                     v.splice(index, 1)
                     break;
